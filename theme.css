@@ -3,6 +3,7 @@ Flexoki
 MIT License
 Copyright (c) 2023 Steph Ango
 https://stephango.com/flexoki
+(Modified By Cyne Wulf)
 */
 .theme-light {
   --color-red-rgb: 175, 48, 41;
@@ -41,6 +42,51 @@ https://stephango.com/flexoki
   --color-base-60: #878580;
   --color-base-70: #6F6E69;
   --color-base-100: #100F0F;
+  
+  /* Adding heading colors for light theme */
+  --h1-color: var(--color-red);
+  --h2-color: var(--color-orange);
+  --h3-color: var(--color-yellow);
+  --h4-color: var(--color-green);
+  --h5-color: var(--color-blue);
+  --h6-color: var(--color-purple);
+  
+  /* Apply the heading colors */
+  .markdown-preview-view h1,
+  .cm-header-1 {
+    color: var(--h1-color);
+  }
+  .markdown-preview-view h2,
+  .cm-header-2 {
+    color: var(--h2-color);
+  }
+  .markdown-preview-view h3,
+  .cm-header-3 {
+    color: var(--h3-color);
+  }
+  .markdown-preview-view h4,
+  .cm-header-4 {
+    color: var(--h4-color);
+  }
+  .markdown-preview-view h5,
+  .cm-header-5 {
+    color: var(--h5-color);
+  }
+  .markdown-preview-view h6,
+  .cm-header-6 {
+    color: var(--h6-color);
+  }
+  
+  /* Bold and italic styling for light theme */
+  strong, .cm-strong {
+    color: var(--color-yellow);
+    font-weight: bold;
+  }
+  
+  em, .cm-em {
+    color: var(--color-yellow);
+    font-style: italic;
+  }
 }
 .theme-dark {
   --color-red-rgb: 209, 77, 65;
@@ -79,4 +125,48 @@ https://stephango.com/flexoki
   --color-base-60: #6F6E69;
   --color-base-70: #878580;
   --color-base-100: #CECDC3;
+
+  --h1-color: var(--color-base-100);
+  --h2-color: var(--color-yellow);
+  --h3-color: var(--color-green);
+  --h4-color: var(--color-red);
+  --h5-color: var(--color-purple);
+  --h6-color: var(--color-base-70);
+  
+  /* Apply the heading colors */
+  .markdown-preview-view h1,
+  .cm-header-1 {
+    color: var(--h1-color);
+  }
+  .markdown-preview-view h2,
+  .cm-header-2 {
+    color: var(--h2-color);
+  }
+  .markdown-preview-view h3,
+  .cm-header-3 {
+    color: var(--h3-color);
+  }
+  .markdown-preview-view h4,
+  .cm-header-4 {
+    color: var(--h4-color);
+  }
+  .markdown-preview-view h5,
+  .cm-header-5 {
+    color: var(--h5-color);
+  }
+  .markdown-preview-view h6,
+  .cm-header-6 {
+    color: var(--h6-color);
+  }
+  
+  /* Bold and italic styling for dark theme */
+  strong, .cm-strong {
+    color: var(--color-orange);
+    font-weight: bold;
+  }
+  
+  em, .cm-em {
+    color: var(--color-orange);
+    font-style: italic;
+  }
 }
